@@ -1,3 +1,17 @@
+<script setup>
+import { ref } from 'vue';
+
+const image1 = ref('https://digitani.ipb.ac.id/wp-content/uploads/2024/08/RA-Article-Cover-2-1024x724.png')
+const image2 = ref('https://i.pinimg.com/222x/ed/bb/aa/edbbaad85e4cc907e6c760f165b4e225.jpg')
+const image3 = ref('https://lessismore.co/cdn/shop/articles/citrus-fruits_ba46fb42-ac3b-47e9-8087-0e82485e2430.webp?v=1776338800&width=1500')
+const image4 = ref('https://lessismore.co/cdn/shop/articles/citrus-fruits_ba46fb42-ac3b-47e9-8087-0e82485e2430.webp?v=1776338800&width=1500')
+const image5 = ref('https://mandalikaperfume.co.id/wp-content/uploads/2025/03/aroma-amber-1080x675.jpeg')
+const image6 = ref('https://bibitbunga.com/wp-content/uploads/2015/08/madagascar-jasmine.jpg')
+const image7 = ref('https://statik.tempo.co/data/2024/01/20/id_1272924/1272924_720.jpg')
+const image8 = ref('https://thumbs.dreamstime.com/b/close-up-shot-vanilla-flowers-pods-showcasing-aromatic-beans-ideal-culinary-natural-fragrance-designs-flower-362304188.jpg')
+
+</script>
+
 <template>
   <div class="hero-container">
     <div class="left-content">
@@ -75,6 +89,26 @@
       </div>
     </div>
   </div>
+
+  <div class="main-content">
+    <div class="wrapper-main-content">
+      <p class="badges">50k+ customers are with Mocko</p>
+      <h1>Only high-quality <br/> parfume ingreduents</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, asperiores!</p>
+    </div>
+    
+    <div class="notes">
+      <img class="img-1" :src="image1" alt="">
+      <img class="img-2" :src="image2" alt="">
+      <img class="img-3" :src="image3" alt="">
+      <img class="img-4" :src="image4" alt="">
+
+      <img class="img-5" :src="image5" alt="">
+      <img class="img-6" :src="image6" alt="">
+      <img class="img-7" :src="image7" alt="">
+      <img class="img-8" :src="image8" alt="">
+    </div>
+  </div>
 </template>
 
 <style scoped>
@@ -87,6 +121,7 @@
   align-items: center;
   background: radial-gradient(circle at 80% 20%, rgba(216, 180, 254, 0.15) 0%, transparent 50%), #ffffff;
   color: #1a1a1a;
+  margin-top: 2rem;
   padding: 7rem;
   font-family: 'Inter', sans-serif;
 }
@@ -124,6 +159,7 @@
   border-radius: 9999px;
   font-size: 0.85rem;
   background-color: #ffffff;
+  margin-left: 10px;
 }
 
 .highlight-count {
@@ -333,6 +369,108 @@
   display: flex;
   align-items: center;
   gap: 0.25rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 800px;
+  background-color: rgb(17, 17, 17);
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.main-content .badges {
+  border: white 2px solid;
+  padding: 8px 5px;
+  border-radius: 50px;
+  width: 50%;
+}
+
+.wrapper-main-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-content .notes .img-1 {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 20px;
+  position: absolute;
+  top: 1150px;
+  left: 100px;
+}
+.main-content .notes .img-2 {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+  position: absolute;
+  top: 1350px;
+  left: 200px;
+}
+.main-content .notes .img-3 {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+  position: absolute;
+  top: 1000px;
+  left: 250px;
+}
+.main-content .notes .img-4{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 20px;
+  position: absolute;
+  top: 1470px;
+  left: 390px;
+}
+.main-content .notes .img-5 {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 20px;
+  position: absolute;
+  top: 1150px;
+  right: 100px;
+}
+.main-content .notes .img-6 {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+  position: absolute;
+  top: 1350px;
+  right: 200px;
+}
+.main-content .notes .img-7 {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+  position: absolute;
+  top: 1000px;
+  right: 250px;
+}
+.main-content .notes .img-8{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 20px;
+  position: absolute;
+  top: 1470px;
+  right: 390px;
 }
 
 /* Responsive breakpoint untuk HP/Tablet */
