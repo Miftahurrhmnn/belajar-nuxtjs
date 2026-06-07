@@ -98,17 +98,59 @@ const image8 = ref('https://thumbs.dreamstime.com/b/close-up-shot-vanilla-flower
     </div>
     
     <div class="notes">
-      <img class="img-1" :src="image1" alt="">
-      <img class="img-2" :src="image2" alt="">
-      <img class="img-3" :src="image3" alt="">
-      <img class="img-4" :src="image4" alt="">
+      <img class="img-1" :src="image1" alt=""  data-aos="zoom-in" data-aos-duration="1000" data-aos-mirror="true">
+      <img class="img-2" :src="image2" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-mirror="true">
+      <img class="img-3" :src="image3" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-mirror="true">
+      <img class="img-4" :src="image4" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-mirror="true">
 
-      <img class="img-5" :src="image5" alt="">
-      <img class="img-6" :src="image6" alt="">
-      <img class="img-7" :src="image7" alt="">
-      <img class="img-8" :src="image8" alt="">
+      <img class="img-5" :src="image5" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-mirror="true">
+      <img class="img-6" :src="image6" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-mirror="true">
+      <img class="img-7" :src="image7" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-mirror="true">
+      <img class="img-8" :src="image8" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-mirror="true">
     </div>
   </div>
+
+ <section class="showcase-section">
+    <div class="showcase-container">
+      
+      <div class="showcase-left">
+        <div class="video-wrapper">
+          <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=800&auto=format&fit=crop&q=80" alt="Spraying Perfume" class="video-thumbnail">
+          
+          <button class="play-btn" aria-label="Play Video">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="play-icon">
+              <path fill-rule="evenodd" d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <div class="showcase-right">
+        
+        <div class="showcase-header">
+          <h2 class="showcase-title">ELEVATE YOUR</h2>
+          <h2 class="showcase-title serif-text">MEMORABLE OCCASION</h2>
+        </div>
+
+        <div class="images-overlap-grid">
+          <div class="img-box box-flower">
+            <img src="https://images.unsplash.com/photo-1668676016491-8d2ad863cea6?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="White Flower Accent">
+          </div>
+          <div class="img-box box-model">
+            <img src="https://images.unsplash.com/photo-1547887537-6158d64c35b3?w=500&auto=format&fit=crop&q=80" alt="Applying perfume on neck">
+          </div>
+        </div>
+
+        <p class="showcase-description">
+          "Enhance your special moments with the ideal fragrance, leaving an indelible mark on your cherished memories. 
+          Let the exquisite scent accompany you on your journey of joy, adding a touch of elegance to every precious moment."
+        </p>
+        
+      </div>
+
+    </div>
+  </section>
+
 </template>
 
 <style scoped>
@@ -471,6 +513,165 @@ const image8 = ref('https://thumbs.dreamstime.com/b/close-up-shot-vanilla-flower
   position: absolute;
   top: 1470px;
   right: 390px;
+}
+
+/* --- SHOWCASE SECTION CONTAINER --- */
+.showcase-section {
+  background-color: #ffffff;
+  padding: 5rem 0;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+.showcase-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 3rem;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr; /* Sisi kiri sedikit lebih lebar */
+  gap: 5rem;
+  align-items: center;
+}
+
+/* --- KIRI: STYLING VIDEO & PLAY BUTTON --- */
+.showcase-left {
+  width: 100%;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5; /* Rasio potret meninggi pas sesuai foto */
+  border-radius: 4px;  /* Sudut tajam minimalis sesuai gambar */
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border: none;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.play-btn:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.play-icon {
+  width: 32px;
+  height: 32px;
+  color: #1a1a1a;
+  margin-left: 4px; /* Sedikit offset agar visual segitiga tepat di tengah */
+}
+
+/* --- KANAN: TYPOGRAPHY & OVERLAPPING IMAGES --- */
+.showcase-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.showcase-header {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.showcase-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.serif-text {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+/* Trik Utama: Penempatan Gambar Bertingkat (Overlap) */
+.images-overlap-grid {
+  position: relative;
+  width: 100%;
+  height: 380px; /* Menentukan tinggi area grid gambar */
+  margin-top: 1rem;
+}
+
+.img-box {
+  position: absolute;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Gambar Kiri Bawah (Bunga) */
+.box-flower {
+  width: 32%;
+  aspect-ratio: 1 / 1; /* Kotak persegi sempurna */
+  left: 100px;
+  bottom: -20px;
+  border-radius: 4px;
+  z-index: 2; /* Berada di depan sedikit */
+}
+
+/* Gambar Kanan Atas (Model) */
+.box-model {
+  width: 53%;
+  aspect-ratio: 4 / 5; /* Persegi panjang potret */
+  right: 0;
+  top: 0;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+/* Deskripsi Paragraf */
+.showcase-description {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #4b5563;
+  font-style: normal;
+  max-width: 540px;
+}
+
+/* Responsif untuk Layar Tablet / HP */
+@media (max-width: 968px) {
+  .showcase-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 0 1.5rem;
+  }
+  
+  .showcase-title {
+    font-size: 2rem;
+  }
+  
+  .images-overlap-grid {
+    height: 300px;
+  }
 }
 
 /* Responsive breakpoint untuk HP/Tablet */

@@ -2,7 +2,7 @@
   <div class="app-container">
     <nav class="navbar">
       <div class="logo">
-        <span class="logo-icon">✦</span> Ambera
+        <span class="logo-icon">✦</span> Amarta
       </div>
 
       <div class="nav-pill-wrapper">
@@ -35,16 +35,16 @@
       <slot />
     </main>
 
-    <footer class="ambera-footer">
+    <footer class="Amarta-footer">
       <div class="footer-container">
         
         <div class="footer-top">
           <h2 class="footer-slogan">
-            Ambera is where the <br />
+            Amarta is where the <br />
             finest fragrance is curated.
           </h2>
           <div class="footer-contact-info">
-            <p><span>✉</span> customer_service@ambera.com</p>
+            <p><span>✉</span> customer_service@Amarta.com</p>
             <p><span></span> 0811-1090-0088</p>
             <p><span></span> 4500-233</p>
           </div>
@@ -52,7 +52,7 @@
 
         <div class="footer-links-grid">
           <div class="footer-col">
-            <h4>Ambera Shop</h4>
+            <h4>Amarta Shop</h4>
             <ul>
               <li><a href="#">New Arrivals</a></li>
               <li><a href="#">Best Sellers</a></li>
@@ -67,7 +67,7 @@
             <ul>
               <li><a href="#">Shipping & Delivery</a></li>
               <li><a href="#">Returns & Exchanges</a></li>
-              <li><a href="#">Ambera FAQ</a></li>
+              <li><a href="#">Amarta FAQ</a></li>
               <li><a href="#">Track Order</a></li>
               <li><a href="#">Contact Support</a></li>
             </ul>
@@ -76,7 +76,7 @@
           <div class="footer-col">
             <h4>Discover</h4>
             <ul>
-              <li><a href="#">The Ambera Story</a></li>
+              <li><a href="#">The Amarta Story</a></li>
               <li><a href="#">Fragrance Notes</a></li>
               <li><a href="#">Artisanal Craftsmanship</a></li>
               <li><a href="#">In-Store Experience</a></li>
@@ -116,7 +116,7 @@
       </div>
 
       <div class="footer-giant-bg">
-        AMBERA
+        AMARTA
       </div>
     </footer>
   </div>
@@ -277,8 +277,8 @@ body {
   width: 100%;
 }
 
-/* --- AMBERA PREMIUM FOOTER STYLING --- */
-.ambera-footer {
+/* --- Amarta PREMIUM FOOTER STYLING --- */
+.Amarta-footer {
   background-color: #0d0d0d; /* Latar belakang hitam pekat mendalam */
   color: #ffffff;
   padding-top: 5rem;
