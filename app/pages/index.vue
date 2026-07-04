@@ -4,7 +4,7 @@ import { ref } from 'vue';
 const image1 = ref('https://digitani.ipb.ac.id/wp-content/uploads/2024/08/RA-Article-Cover-2-1024x724.png')
 const image2 = ref('https://i.pinimg.com/222x/ed/bb/aa/edbbaad85e4cc907e6c760f165b4e225.jpg')
 const image3 = ref('https://lessismore.co/cdn/shop/articles/citrus-fruits_ba46fb42-ac3b-47e9-8087-0e82485e2430.webp?v=1776338800&width=1500')
-const image4 = ref('https://lessismore.co/cdn/shop/articles/citrus-fruits_ba46fb42-ac3b-47e9-8087-0e82485e2430.webp?v=1776338800&width=1500')
+const image4 = ref('https://png.pngtree.com/thumb_back/fh260/background/20241204/pngtree-sweet-pineapple-slices-and-a-whole-pineapple-on-a-yellow-background-image_16735336.jpg')
 const image5 = ref('https://mandalikaperfume.co.id/wp-content/uploads/2025/03/aroma-amber-1080x675.jpeg')
 const image6 = ref('https://bibitbunga.com/wp-content/uploads/2015/08/madagascar-jasmine.jpg')
 const image7 = ref('https://statik.tempo.co/data/2024/01/20/id_1272924/1272924_720.jpg')
