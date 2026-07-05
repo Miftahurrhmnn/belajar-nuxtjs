@@ -201,9 +201,16 @@ body {
 }
 
 /* Efek tombol aktif atau hover pada menu kapsul */
-.nav-links a:hover, .nav-links a.router-link-active, .nav-links a.active {
+.nav-links a:hover {
   color: #000000;
   background-color: #f1f5f9;
+}
+
+/* Kunci warna aktif ke kelas baru ini agar tidak menyala barengan */
+.nav-links a.active-pill {
+  color: #000000;
+  background-color: #f1f5f9;
+  font-weight: 600; /* Opsional: membuat teks yang aktif sedikit lebih tebal */
 }
 
 .dropdown-arrow {
